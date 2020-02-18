@@ -7,6 +7,56 @@ h1 {
     color: #707070;
 }
 
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+        
+}
+
+.header_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav {
+    font-size: 20px;
+    font-style: italic;
+    font-family: fantasy;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+
+.nav_link{
+    color: #3039b1;
+    text-decoration: none;
+    transition: color 0.4s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+.nav_link:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.nav_link:active{
+    color: blueviolet;
+    text-decoration: overline;
+}
+
+
+.content{
+    padding-top:  150px; 
+}
+
 .menu {
     color: #F700F7;
     font-size: 20px;
@@ -22,8 +72,13 @@ h1 {
     height: 30px;
 }
 
+
+.tab_container {
+    margin-left: 30px;
+}
+
 .w_header {
-    color: #FFFFF;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: 400;
     background-color: #eaaeae;
@@ -33,7 +88,6 @@ h1 {
 .short_dscr {
     color: #707070;
     font-size: 14px;
-    font-style: italic;
     line-height: 14px;
 }
 
@@ -45,22 +99,36 @@ h1 {
     text-align: left;
 }
 
-.chars {
-    background-color: #FF9DCE;
+.short_dscr::first-letter,
+.full_dscr::first-letter {
+    font-size: 26px;
+    font-weight: 800;
+    color: cornflowerblue;
+    font-style: italic;
 }
 
-.chars > li {
-    list-style-image: url(../img/needle2.png);
-    text-align: left;
-    margin-left: 30px;
-    font-size: 20px;
-    font-style: oblique;
-    font-weight: 600;
-    color: #3039b1;
+
+
+fieldset {
+    height: auto;
+    width: 240px;
 }
+
+.sex {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+input[type="email"]:focus{
+    color: red;
+    background: yellow;
+}
+
 
 fieldset, 
 input[type="text"],
+input[type="email"],
 input[type="submit"],
 input[type="reset"], 
 textarea, 
@@ -74,6 +142,7 @@ textarea,
 }
 
 input[type="text"], 
+input[type="email"],
 textarea, .sex {
     color: #707070;
     font-weight: 300;
@@ -82,15 +151,17 @@ textarea, .sex {
     width: 100%;
 }
 
-fieldset {
-    height: auto;
-    width: 240px;
+/*
+fieldset input[type="text"]::first-letter{
+    color: red;
+    text-transform: capitalize;
+} 
+*/
+fieldset input,
+fieldset textarea{
+    text-transform: capitalize;
 }
 
-.sex {
-    display: flex;
-    justify-content: space-around;
-}
 
 .contact_us,
 input[type="submit"],
@@ -116,6 +187,10 @@ input[type="reset"] {
     height: 210px;
     background-color: aquamarine;
     align-items: center;
+}
+
+.pic_container:hover{
+    background-color: #f8f8f8;
     
 }
 
@@ -125,13 +200,48 @@ input[type="reset"] {
 
 
 
+.chars, .justtable {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    padding-left: 20px;    
+    
+}
+
+.chars td{
+    
+    border: 1px solid black;
+    padding-left:  10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    text-align: left;
+    height: 35px;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 300;
+    color: #3039b1;
+}
 
 
+.chars .chars_header {
+    background-color: #eaaeae;
+    text-align: center;
+    font-weight: 600;
+}
 
 
+.justtable td {
+    border: 1px solid black;
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+}
 
 
-
+.justtable .first_row {
+    height: 80px;
+}
 
 
 
