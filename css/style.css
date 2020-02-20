@@ -1,45 +1,50 @@
 body {
-background-color: #f8f8f8;
-    
+background-color: #ccc; /*#f8f8f8;*/
 }
 
-h1 {
-    color: #707070;
+.container{
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    background-color: #f8f8f8;
 }
 
 
 .header {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
     width: 100%;
-        
+    height: 183px;
+    background-color: #000;
+    color: antiquewhite;
 }
 
-.header_content{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.logo {
+    position: absolute;
+    left: 5px;
+    top: 5px;
 }
 
+#nav{
+    padding-right: 40px;
+    padding-top: 73px; 
+    color: antiquewhite;
+}
 .nav {
     font-size: 20px;
     font-style: italic;
     font-family: fantasy;
     font-weight: 500;
     text-transform: uppercase;
-    
+    float: right;
+    border: 5px solid antiquewhite;
 }
 
 .nav_link{
-    color: #3039b1;
+    color: antiquewhite;
     text-decoration: none;
     transition: color 0.4s linear;
     display: inline-block;
-    vertical-align: top;
-    margin: 0 10px;
+    margin: 0 20px ;
 }
 
 .nav_link:hover{
@@ -54,6 +59,7 @@ h1 {
 
 
 .content{
+    
     padding-top:  150px; 
 }
 
@@ -65,6 +71,23 @@ h1 {
     font-weight: 500;
     text-transform: uppercase;
     
+}
+
+.footer{
+    background-color: #000;
+    height: 90px;
+    color: antiquewhite;
+}
+
+.footer i {
+    float: right;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+
+h1 {
+    color: #707070;
 }
 
 .menu > li {
@@ -151,12 +174,6 @@ textarea, .sex {
     width: 100%;
 }
 
-/*
-fieldset input[type="text"]::first-letter{
-    color: red;
-    text-transform: capitalize;
-} 
-*/
 fieldset input,
 fieldset textarea{
     text-transform: capitalize;
@@ -180,7 +197,6 @@ input[type="reset"] {
     width: 500px;
 }
 
-/*ware1, ware 2*/
 
 .pic_container {
     max-width: 210px;
@@ -242,9 +258,6 @@ input[type="reset"] {
 .justtable .first_row {
     height: 80px;
 }
-
-
-
 
 
 
