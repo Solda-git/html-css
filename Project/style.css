@@ -283,7 +283,6 @@ nav .nav-link:hover {
     
 }
 
-
 .img-product {
     margin-top:120px; 
     float:left;
@@ -297,8 +296,7 @@ nav .nav-link:hover {
 }
 .big-imgs{
     width: 50%;
-    height: 683px;
-        
+    height: 683px;     
     float:left;
 }
 
