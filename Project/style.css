@@ -78,6 +78,7 @@ nav .nav-link:hover {
     float: right;
     padding-top: 63px;
     padding-right: 167px;
+    display: inline-block;
 }
 
 .slider-trending {
