@@ -32,10 +32,21 @@ body {
     margin-left: 98px;
 }
 
+.logo_link:hover {
+    display: inline-block;
+    border-bottom: 3px solid #CCC;
+}
+
+.logo_link:active {
+    display: inline-block;
+    border-bottom: 3px solid #000;
+}
+
 .logo {
     padding-top: 63px;
     float: left;
 }
+
 
 .clear-fix {
     content: "";
@@ -74,12 +85,24 @@ nav .nav-link:hover {
     color: #212121;
 }
 
+nav .nav-link:active {
+    border-bottom: 1px solid #212121;
+}
+
 .search {
     float: right;
     padding-top: 63px;
     padding-right: 167px;
     display: inline-block;
 }
+
+.search-img:hover{
+    border-bottom: 1px solid #000;  
+} 
+
+.search-img:active{
+    border-bottom: 3px solid #000;  
+} 
 
 .slider-trending {
     padding-top: 296px;
@@ -135,6 +158,20 @@ nav .nav-link:hover {
     content: "  >";
 }
 
+.button:hover {
+    
+    background-color: #EEE;
+    color:blue;
+}
+
+.button:active {
+
+    box-shadow: 0 2px 5px 1px rgba(99, 99, 99, 1);
+    text-decoration: underline;
+}
+
+
+
 .circle {
     width: 30px;
     height: 30px;
@@ -172,7 +209,7 @@ nav .nav-link:hover {
 }
 
 .menu2{
-    margin-top: 120px;
+    margin-top: 100px;
     float: left;
 }
 
@@ -182,9 +219,22 @@ nav .nav-link:hover {
     font-weight: 700;
     text-decoration: none;
     border-bottom: 1px solid #6c6c6c;
-    line-height: 2;
+    line-height: 70px;
     display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
+.nav2-link:hover {
+    color: #212121;
+    
+}
+
+.nav2-link:active {
+    color: #212121;
+    border-bottom: 3px solid #212121; 
+}
+
 .nav2-link-active {
     color: #212121;
     border-bottom: 3px solid #212121;   
@@ -211,8 +261,15 @@ nav .nav-link:hover {
     text-decoration: none;
 }
 
+.exploreall-link:hover {
+    border-bottom: 1px solid #212121; 
+}
+.exploreall-link:active {
+    color: #212121;
+    border-bottom: 3px solid #212121; 
+}
+
 .img-row  {
-    margin-top: 50px;
     position: relative;
 }
 
@@ -223,13 +280,12 @@ nav .nav-link:hover {
     height: 270px;
     position: relative;
     float:left;
-    margin-top:120px;
+    margin-top:72px;
     
 }
 
 .fishnet-img { 
     background-color: #999;
-    background-image: url("img/product-1.jpg");
     opacity: 0.1;
     width: 270px;
     height: 270px;
@@ -237,8 +293,33 @@ nav .nav-link:hover {
     position: absolute;
     z-index: 100;
 }
+
+.fnprod1{
+    background-image: url("img/product-1.jpg");
+}
+
+.fnprod2{
+    background-image: url("img/product-2.jpg");
+}
+
+.fnprod3{
+    background-image: url("img/product-3.jpg");
+}
+
+.fnprod4{
+    background-image: url("img/product-4.jpg");
+}
+
+.fishnet-container2 {
+    margin-left: 30px; 
+    
+}
 .fishnet-img:hover{
     opacity: 0.5;    
+}
+
+.fishnet-img:active{
+    opacity: 1;    
 }
 
 .fbutton {
@@ -282,11 +363,8 @@ nav .nav-link:hover {
     margin-left: 23px;
     
 }
-
-.img-product {
-    margin-top:120px; 
-    float:left;
-    margin-left: 30px;
+.fishnet-container1 {
+     margin-left: 30px; 
 }
 
 /*exclusive   block*/
@@ -365,12 +443,28 @@ nav .nav-link:hover {
 }
 
 .tr-image{
-    margin-right: 30px; 
+   
    
 }
 .tr-images{
     padding-bottom: 30px;
 }
+
+.tr-img-link {
+    display: inline-block;
+    margin-right: 30px; 
+    height: 370px;
+}
+
+.tr-img-link:hover {
+    outline: 1px solid #ccc;
+}
+
+.tr-img-link:active {
+    outline: 1px solid #000;
+}
+
+
 /*hot-deal block*/
 .hot-deal {
     background-image: url(img/slider.jpg);
@@ -459,10 +553,28 @@ nav .nav-link:hover {
     width: 570px;
     padding-bottom: 30px;
 }
-
+/*
 .ex2-img:nth-child(odd) {
     margin-right: 30px;
+}*/
+
+.mini-img-link {
+
 }
+
+.mini-img-link:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.mini-img-link:hover {
+     outline: 1px solid #ccc;
+}
+
+
+.mini-img-link:active {
+     outline: 1px solid #000;
+}
+
 /*mobile block*/
 .mobile {
     height: 516px;
@@ -598,16 +710,40 @@ padding-top: 120px;
     line-height: 22px;
 }
 
+.mail-cont {
+    width: 351px;
+    height: 48px; 
+    margin-bottom: 39px;
+    position: relative;
+}
+
 .mail {
     border: 1px solid #d9dee1;
     background-color: #ffffff;
-    width: 351px;
+    width: 331px;
     height: 48px;
     color: #6c6c6c;
     font-size: 14px;
     font-weight: 300; 
     padding-left: 19px;
-    margin-bottom: 39px;
+    display: inline-block;
+       position: absolute;
+    
+}
+
+.telegram {
+    display: inline-block;
+    position: absolute;
+    padding-left: 320px;
+    padding-top: 13px;    
+}
+
+.fa-telegram-plane {
+    width: 21px;
+    height: 17px;
+    color: #6c6c6c;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .contacts-footer {

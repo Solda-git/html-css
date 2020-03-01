@@ -5,6 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
 </head>
 <body>
   <div class="container">
@@ -12,10 +13,11 @@
       <div class="slider">
           <div class="slider-margin">
               <div class="logo">
-                  <img src="img/logo.svg" alt="" >
+                  <a href="#" class="logo_link"><img src="img/logo.svg" alt="" >
+                  </a>
               </div>
               <div class="search">     
-                  <a href="#"><img src="img/search.svg" alt="search">   </a>
+                  <a href="#" class="search-img" title="search"><img src="img/search.svg" alt="search">   </a>
               </div>      
               <div class="menu">
                  <nav class="nav-menu clear-fix">
@@ -39,7 +41,7 @@
       </div>
       <div class="featured-new-margin">
           <div class="menu2">               <nav>
-                <a href="#" class="nav2-link nav2-link-active">&nbsp;&nbsp;Featured&nbsp;&nbsp;</a><a href="#" class="nav2-link">&nbsp;&nbsp;New&nbsp;&nbsp;</a>
+                <a href="#" class="nav2-link nav2-link-active">Featured</a><a href="#" class="nav2-link">New</a>
               </nav>  
           </div>
            <div class="exploreall">
@@ -48,16 +50,39 @@
            
            <div class="img-row clear-fix">
                 <div class="fishnet-container">
-                   <div class="fishnet-img clear-fix" ></div>
+                   <div class="fishnet-img fnprod1 clear-fix" ></div>
                    
                    <div class="fbutton">></div>
                    <h2 class="fishnet-header">Fishnet Chair</h2>            
                    <p class="fishnet-text">Seat and back with upholstery made of cold cure foam</p> 
                 </div>
                 
+                <div class="fishnet-container fishnet-container1">
+                   <div class="fishnet-img fnprod2 clear-fix" ></div>
+                   
+                   <div class="fbutton">></div>
+                   <h2 class="fishnet-header">Fishnet Chair</h2>            
+                   <p class="fishnet-text">Seat and back with upholstery made of cold cure foam</p> 
+                </div>
+                <div class="fishnet-container fishnet-container1">
+                   <div class="fishnet-img fnprod3 clear-fix" ></div>
+                   
+                   <div class="fbutton">></div>
+                   <h2 class="fishnet-header">Fishnet Chair</h2>            
+                   <p class="fishnet-text">Seat and back with upholstery made of cold cure foam</p> 
+                </div>
+                <div class="fishnet-container fishnet-container1">
+                   <div class="fishnet-img fnprod4  clear-fix" ></div>
+                   
+                   <div class="fbutton">></div>
+                   <h2 class="fishnet-header">Fishnet Chair</h2>            
+                   <p class="fishnet-text">Seat and back with upholstery made of cold cure foam</p> 
+                </div>
+<!--                
                 <div class="img-product"><img src="img/product-2.jpg" alt=""></div>
                 <div class="img-product"><img src="img/product-3.jpg" alt=""></div>
                 <div class="img-product"><img src="img/product-4.jpg" alt=""></div>
+-->
            </div>    
       </div>
       
@@ -82,10 +107,10 @@
           </div>
           <div class="trending-container clear-fix">
               <div class="tr-images">
-                 <img src="img/product-11.jpg" alt="" class="tr-image"><img src="img/product-21.jpg" alt="" class="tr-image"><img src="img/product-31.jpg" alt="" class="tr-image">
+                  <a href="#" class="tr-img-link"><img src="img/product-11.jpg" alt="" class="tr-image"></a><a href="#" class="tr-img-link"><img src="img/product-21.jpg" alt="" class="tr-image"></a><a href="#" class="tr-img-link"><img src="img/product-31.jpg" alt="" class="tr-image"></a>
               </div>
               <div class="tr-images">
-                 <img src="img/product-41.jpg" alt="" class="tr-image"><img src="img/product-5.jpg" alt="" class="tr-image"><img src="img/product-6.jpg" alt="" class="tr-image">  
+                  <a href="#" class="tr-img-link"><img src="img/product-41.jpg" alt="" class="tr-image"></a><a href="#" class="tr-img-link"><img src="img/product-5.jpg" alt="" class="tr-image"></a><a href="#" class="tr-img-link"><img src="img/product-6.jpg" alt="" class="tr-image"></a>  
               </div>
           </div> 
       </div>
@@ -111,10 +136,10 @@
           </div>
           <div class="ex2-container2">
               <div class="ex2-mini">
-                  <img src="img/product-2-sm.jpg" alt="" class="ex2-img"><img src="img/product-3-sm.jpg" alt="" class="ex2-img">
+                  <a href="#" class="mini-img-link"><img src="img/product-2-sm.jpg" alt="" class="ex2-img"></a><a href="#" class="mini-img-link"><img src="img/product-3-sm.jpg" alt="" class="ex2-img"></a>
               </div>  
               <div class="ex2-mini"> 
-                  <img src="img/product-4-sm.jpg" alt="" class="ex2-img"><img src="img/product-5-sm.jpg" alt="" class="ex2-img">
+                  <a href="#" class="mini-img-link"><img src="img/product-4-sm.jpg" alt="" class="ex2-img"></a><a href="#" class="mini-img-link"><img src="img/product-5-sm.jpg" alt="" class="ex2-img"></a>
               </div>
           </div>
       </div>
@@ -147,15 +172,24 @@
               </div>
               <div class="intouch-mes">
                   <p>Suscribe to know about our latest news, products and special offers just for suscribers.</p>
-                  <input type="email" class="mail" placeholder="your email address">
+                      <div class="mail-cont">
+                          <input type="email" class="mail" placeholder="your email address">
+                          <div class="telegram">
+                              
+                              <i class="fab fa-telegram-plane"></i>
+                          </div>
+                      </div>
               </div>
               <div class="contacts-footer">
                  <p class="copyright">
                      © Copyright - INTERIOR 2016. All Rights Reserved.
                   </p>
-                 <div class="social">
-                      <a href="#" class="social-ref">f</a><a href="" class="social-ref">T</a><a href="" class="social-ref">g+</a><a href="" class="social-ref">P</a>
-                 </div>
+           
+                <div class="social">
+                      <!-- <a href="#" class="social-ref">f</a><a href="" class="social-ref">T</a><a href="" class="social-ref">g+</a><a href="" class="social-ref">P</a>-->
+                      <a href="#" class="social-ref"><i class="fab fa-facebook-f"></i></a><a href="" class="social-ref social-tw"><i class="fab fa-twitter"></i></a><a href="" class="social-ref"><i class="fab fa-google-plus-g"></i></a><a href="" class="social-ref">
+                          <i class="fab fa-pinterest-p"></a></i>
+                 </div> 
                  <div class="legal">
                  <a href="#" class="legal-text">Terms & Conditions  /  Privacy policy & Cookies</a>
                  </div>
