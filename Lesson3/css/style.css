@@ -1,0 +1,149 @@
+body {
+background-color: #f8f8f8;
+    
+}
+
+h1 {
+    color: #707070;
+}
+
+.menu {
+    color: #F700F7;
+    font-size: 20px;
+    font-style: italic;
+    font-family: fantasy;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+
+.menu > li {
+    list-style-type: none;
+    height: 30px;
+}
+
+.w_header {
+    color: #FFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaaeae;
+    
+}
+
+.short_dscr {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 14px;
+}
+
+.full_dscr {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+}
+
+.chars {
+    background-color: #FF9DCE;
+}
+
+.chars > li {
+    list-style-image: url(../img/needle2.png);
+    text-align: left;
+    margin-left: 30px;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 600;
+    color: #3039b1;
+}
+
+fieldset, 
+input[type="text"],
+input[type="submit"],
+input[type="reset"], 
+textarea, 
+.sex, 
+.contact_us,
+.ymap
+{    
+    border-color: #e3e3e3;
+    border-width: 10px;
+    border-style: groove;
+}
+
+input[type="text"], 
+textarea, .sex {
+    color: #707070;
+    font-weight: 300;
+    max-width: 220px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+fieldset {
+    height: auto;
+    width: 240px;
+}
+
+.sex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_us,
+input[type="submit"],
+input[type="reset"]  {
+    font-weight: 1000;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width:  105px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.ymap{
+    width: 500px;
+}
+
+/*ware1, ware 2*/
+
+.pic_container {
+    max-width: 210px;
+    height: 210px;
+    background-color: aquamarine;
+    align-items: center;
+    
+}
+
+.fr_img {
+    margin: 5px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
